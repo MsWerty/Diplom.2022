@@ -40,37 +40,6 @@
     font-weight: 700;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Cormorant Infant';
-    src: url('../fonts/CormorantInfant-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-    font-family: 'Cormorant Infant';
-    src: url('../fonts/CormorantInfant-Light.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-    font-family: 'Cormorant Infant';
-    src: url('../fonts/CormorantInfant-Light.woff2') format('woff2');
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-    font-family: 'Cormorant Infant';
-    src: url('../fonts/CormorantInfant-Light.woff2') format('woff2');
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-    font-family: 'Cormorant Infant';
-    src: url('../fonts/CormorantInfant-Light.woff2') format('woff2');
-    font-weight: 700;
-    font-style: italic;
-}
-
 /* global reset */
 html, body, body div, div, span, h1, h2, h3, h4, h5, h6,
 p, a, em, img, small, strike, strong, sub, sup,
@@ -121,29 +90,7 @@ h1 {
     width: 1320px;
 }
 
-/* icons */
-/*.icon::before {
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    color: white;
-    text-align: center;
-}
-/*.icon:hover::before {
-    color: lightblue;
-}
-.logo::before {
-    content: '\e900';
-}
-.login::before {
-    content: '\e902';
-}
-.order::before {
-    content: '\e901';
-}
-.cat::before {
-    content: '\e903';
-}*/
+
 
 /* main */
 body {
@@ -292,9 +239,6 @@ footer {
     display: flex;
     justify-content: space-evenly;
     margin: 0;
-    /*height: 64px;
-    display: flex;
-    align-items: center*/
 }
 .name h1 {
     font: 64px/70px 'Dancing Script';
@@ -369,7 +313,6 @@ footer {
     position: relative;
 }
 .slider_desk {
-    /*border: 1px double #C71585;*/
     width: 598px;
     height: 298px;
     overflow: hidden;
@@ -379,7 +322,6 @@ footer {
     box-shadow: 0px 0px 20px rgba(246,173,247, 0.5);
 }
 .slider_block {
-    /*border: 1px double #C71585;*/
     width: 596px;
     height: 296px;
     position: absolute;
@@ -473,9 +415,6 @@ footer {
     flex-flow: nowrap;
 }
 .toys {
-    /*flex-direction: row;
-    justify-content: center;
-    gap: 10px;*/
     width: 230px;
     height: 390px;
     padding: 20px;
@@ -596,12 +535,6 @@ footer a:hover {
     font-size: 14px;
     line-height: 30px;
 }
-/*.catmenu.simple li li {
-    display: none;
-}
-.catmenu.simple .open li {
-    display: list-item;
-}*/
 .catalog .filters {
     padding: 20px;
 }
@@ -628,7 +561,6 @@ footer a:hover {
 }
 
 .catalog article {
-    /* display: table; */
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -639,15 +571,6 @@ footer a:hover {
     border: 3px solid #BA55D3;
     position: relative;
     opacity: .9;
-    /*display: flex;
-    flex-flow: row nowrap;
-    text-align: left;
-    justify-content: center;
-    align-items: center;*/
-    
-    /*float: left;*/
-    /* display: inline-block; */
-    /* vertical-align: top; */ 
 }
 
 .playname {
@@ -655,8 +578,6 @@ footer a:hover {
     top: 260px;
     display: flex;
     align-items: center;
-    
-    /*font: 12px/24px 'Cormorant Infant';*/
 }
 .cat-item h4 {
       font-size: 16px;
@@ -712,10 +633,6 @@ footer a:hover {
 }
 .bigimage {
     width: 400px;
-    /*height: 550px;*/
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
     border: 2px solid purple;
     padding: 9px;
 }
@@ -873,6 +790,15 @@ u   {
     display: grid;
     grid-template-columns: repeat(7, auto);
 }
+.dp_header {
+    cursor: pointer;
+}
+form {
+    width: 400px;
+}
+.mb-3 button {
+    background: #EE82EE;
+}
 /*contacts*/
 .address {
     display: block;
@@ -947,7 +873,7 @@ u   {
 	background-color: #E6E6FA;
 }
 ::placeholder {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 

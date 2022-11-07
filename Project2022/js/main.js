@@ -11,16 +11,65 @@ let startbasket = [
         link: ''
     },
     {
-        id: 2,
-        name: 'GADIUKA',
-        price: 3000,
-        quantity: 10,
+        id: 12346,
+        name: 'PELICAN HAPPY TOYS Магнитный конструктор светящийся',
+        price: 1950,
+        quantity: 1,
         link: ''
     },
     {
-        id: 111,
-        name: 'Cangaroo',
-        price: 15500,
+        id: 12347,
+        name: 'Соломон. Набор детских кубиков',
+        price: 395,
+        quantity: 1,
+        link: ''
+    },
+    {
+        id: 12348,
+        name: 'ФОРМА ИГРУШКИ. Кораблик Юнга для ванной',
+        price: 452,
+        quantity: 1,
+        link: ''
+    },
+    {
+        id: 12349,
+        name: 'HAPPY LAMA. игрушки Мобиль в кроватку музыкальная карусель',
+        price: 2400,
+        quantity: 1,
+        link: ''
+    },
+    {
+        id: 12350,
+        name: 'BUBBLE JOYCE. Игровой набор доктора детский врач',
+        price: 3999,
+        quantity: 1,
+        link: ''
+    },
+    {
+        id: 12351,
+        name: 'GENIO KIDS. Кинетический Умный песок с песочницей',
+        price: 1100,
+        quantity: 1,
+        link: ''
+    },
+    {
+        id: 12352,
+        name: 'AZEVA. Погремушка прорезыватель зубов зайка для новорожденных',
+        price: 355,
+        quantity: 1,
+        link: ''
+    },
+    {
+        id: 12353,
+        name: 'ROXY-KIDS. Мини коврики для ванной на присосках',
+        price: 475,
+        quantity: 1,
+        link: ''
+    },
+    {
+        id: 12354,
+        name: 'ПЛАСТМАСТЕР. Игрушечный самолет Ястреб',
+        price: 329,
         quantity: 1,
         link: ''
     }
@@ -135,15 +184,7 @@ $(function(){
     });
     
     if ($('.catmenu li li').length) {
-        /*if ($('.catmenu.simple').length) { // если мы хотим простейший аккордеон без сложной анимации
-            $('.catmenu > ul > li').click(function(e){
-                if (e.target.tagName != 'A') {
-                    $('.open').removeClass('open'); // отнимаем класс open у ранее открытого вложенного списка
-                    $(this).find('ul').addClass('open'); // добавляем класс open вложенному списку в кликнутом пункте
-                }
-            });
-        } else { // если мы хотим аккордеон с более красивой анимацией*/
-            $('.catmenu li li').slideUp(1); // скрываем все пункты второго уровня
+        $('.catmenu li li').slideUp(1); // скрываем все пункты второго уровня
             $('.catmenu > ul > li').click(function(e){ // ловим клик на пункте первого уровня
                 if ((e.target.tagName != 'A') && (!$(this).find('.open').length)) { // если клик не был по ссылке и вложенный список в этом пункте уже не раскрыт...
                     let here = $(this).find('ul'); // сохраняем указатель на вложенный список в кликнутом пункте 
@@ -170,21 +211,6 @@ $(function(){
                 }
             });
         }
-    /*}*/
-    
-    // if ($('.querymenu').length) {
-        // $( "#acco" ).accordion({
-            // header: ".acco_h",
-            // icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
-        // });
-        // $( "#toggle" ).button().on( "click", function() {
-            // if ( $( "#acco" ).accordion( "option", "icons" ) ) {
-                // $( "#acco" ).accordion( "option", "icons", null );
-            // } else {
-                // $( "#acco" ).accordion( "option", "icons", icons );
-            // }
-        // });
-    // }
     
     if ($('#slider-range').length) {
         $('#slider-range').slider({
@@ -277,20 +303,7 @@ $(function(){
             basket = [res];
         }
         localStorage.setItem('basket', JSON.stringify(basket));
-        /*
-        вариант без флага
-        
-        if (!basket) basket = [];
-        for (let item of basket) {
-            if (item.id == res.id) {
-                item.quantity = +item.quantity + +res.quantity;
-                localStorage.setItem('basket', JSON.stringify(basket));
-                return;
-            }
-        }
-        basket.push(res);
-        localStorage.setItem('basket', JSON.stringify(basket));
-        */
+      
     });
     
     if ($('.order').length) {
