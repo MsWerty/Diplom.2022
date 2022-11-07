@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Корзина</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/slider.js"></script>
+        <script defer src="js/datepicker.js"></script>
+        <script defer src="js/main.js"></script>
+    </head>
+     <body>
+        <header>
+            <section class="container">
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+            </section>
+                <section class="container1">
+                    <div class="name">
+                        <h1>&#8275;&#10051;BabyToys&#10051;&#8275;</h1>
+                        <p>Магазин детских игрушек</p>
+                    </div>
+                    <div class="search">
+                        <form class="poisk" method="get">
+                            <input class="text" type="search" placeholder="Поиск по сайту.">
+                                <input type="submit" value name="search"><img src="images/search.svg" alt="search">
+                        </form>
+                    </div>
+                    <div  class="user">
+                     <a href="#">
+                        <img src="images/user.png" alt="user" class="vkhod">
+                            <br>Вход/Регистрация
+                        </a>
+                    </div>
+                    <div class="basket">
+                        <a href="order.html">
+                            <img src="images/basket1.png" alt="basket"><br>Корзина
+                        </a>
+                    </div>
+            </section>
+            <section class="container2">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="product.html"><span>Товар</span></a>
+                    <a href="order.html"><span>Корзина</span></a>
+                    <a href="contacts.html"><span>Контакты</span></a>
+                </nav>
+            </section>
+        </header>
+         <main class="order">
+            <section class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="index">#</th>
+                            <th scope="col" class="name">Название</th>
+                            <th scope="col" class="qty">Количество</th>
+                            <th scope="col" class="price">Цена</th>
+                            <th scope="col" class="sum">Сумма</th>
+                            <th scope="col" class="delete">Удалить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- список товаров генерим на лету -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                        <th scope="col" class="index"></th>
+                        <th scope="col" class="allsum" colspan="5">
+                            Итого:
+                            <span></span>
+                        </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            
+            <section class="container">
+                <form name="myform">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Ваша почта</label>
+                        <input type="text" class="form-control" id="mail" name="mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Ваш телефон</label>
+                        <input type="text" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="addr" class="form-label">Ваш адрес</label>
+                        <input type="text" class="form-control" id="addr" name="addr">
+                    </div>
+                    <label for="date" class="form-label">Желаемая дата доставки</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="date" name="date" readonly>
+                        <button class="btn btn-outline-secondary icon" type="button">&#xe907;</button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comm" class="form-label">Комментарий</label>
+                        <textarea class="form-control" id="comm" name="comm" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agree" name="agree" checked>
+                        <label class="form-check-label" for="agree">Согласен на обработку моих персональных данных.</label>
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary submit">Оформить заказ</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="container empty">
+                <h1>Ваша корзина пуста.</h1>
+                <p>Выберите товары в каталоге или при помощи поиска.</p>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer container">
+                <nav class="footer2">
+                    <h4>О нас</h4>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Реквизиты</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                <nav class="footer2">
+                    <h4>Покупателям</h4>
+                    <ul>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Доставка товара</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                    </ul>                    
+                </nav>
+                <nav class="footer2">
+                    <h4>Мы в соцсетиях</h4>
+                    <ul>
+                        <li><a href="#"><img src="images/vk.svg" alt="vk" class="set"> ВКонтакте</a></li>
+                        <li><a href="#"><img src="images/instagram.svg" alt="instagram" class="set"> Instagram</a></li>
+                        <li><a href="#"><img src="images/facebook.svg" alt="facebook" class="set"> Facebook</a></li>
+                        <li><a href="#"><img src="images/telegram.svg" alt="telegram" class="set"> Телеграм</a></li>
+                    </ul>
+                </nav>
+                <div class="footer2">
+                <h4>Наши контакты</h4>
+                    <div>&#128222; +7(999) 999-99-99</div>
+                    <div>&#9201; пн-сб: с 10<sup>00</sup> до 18<sup>00</sup></div>
+                    <div>&#128235; Адрес шоу-рума: г. Москва, ул.Декабристов, 12</div> 
+                </div>
+            </div>
+            </div>
+            <div class="copy">Copyright &#169; GalElena 2022</div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Каталог</title>
+        
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/slider.js"></script>
+        <script defer src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <section class="container">
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+            </section>
+                <section class="container1">
+                    <div class="name">
+                        <h1>&#8275;&#10051;BabyToys&#10051;&#8275;</h1>
+                        <p>Магазин детских игрушек</p>
+                    </div>
+                    <div class="search">
+                        <form class="poisk" method="get">
+                            <input class="text" type="search" placeholder="Поиск по сайту.">
+                                <input type="submit" value name="search"><img src="images/search.svg" alt="search">
+                        </form>
+                    </div>
+                    <div  class="user">
+                     <a href="#">
+                        <img src="images/user.png" alt="user" class="vkhod">
+                            <br>Вход/Регистрация
+                        </a>
+                    </div>
+                    <div class="basket">
+                        <a href="order.html">
+                            <img src="images/basket1.png" alt="basket"><br>Корзина
+                        </a>
+                    </div>
+            </section>
+            <section class="container2">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="product.html"><span>Товар</span></a>
+                    <a href="order.html"><span>Корзина</span></a>
+                    <a href="contacts.html"><span>Контакты</span></a>
+                </nav>
+            </section>
+        </header>
+        
+        <main class="catalog">
+            <section class="container">
+                <aside>
+                    <nav class="catmenu">
+                        <p>Каталог</p>
+                        <ul>
+                            <li>
+                                <a href="#"><span>Игровые наборы</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Для малышей</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Кубики</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Погремушки</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Мобили</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Игрушечный транспорт</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Машинки</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Лодки</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Самолеты</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Конструкторы</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Кинетический песок</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Игрушки для ванной</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /catmenu -->
+                    <div class="filters">
+                        <p>Фильтры</p>
+                        <p>
+                            <label for="amount">Цена от</label>
+                            <input type="text" id="amount1">
+                            <label for="amount">до</label>
+                            <input type="text" id="amount2">
+                        </p>          
+                        <div id="slider-range"></div>
+                    </div>
+                    <div class="filtr">
+                                <p>Пол ребенка:</p>
+                                <div class="pol">
+                                <input type="checkbox" class="checkbox" name="pol1" id="pol1" value="1">
+                                <label for="pol">Для мальчиков</label>
+                                </div>
+                                <div class="pol2">
+                                 <input type="checkbox" class="checkbox" name="pol2" id="pol2" value="1">
+                                <label for="pol2">Для девочек</label>
+                                </div>
+                            </div>
+                            <div class="knopka">
+                            <button type="submit">Показать</button>
+                            </div>
+                </aside>
+                
+                <article>
+                    <div class="cat-item">
+                            <img src="images/catalog/bibi0.png" alt="ALFA Multi Brand Машина на пульте управления Дрифт" class="play">
+                                <div class="playname">
+                                <a href="product.html"><h4>ALFA Multi Brand Машина на пульте управления Дрифт</h4></a>
+                                </div>
+                                <div class="price1">
+                                <p>2 100 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/konstruktor0.png" alt="PELICAN HAPPY TOYS Магнитный конструктор светящийся" class="play">
+                                <div class="playname">
+                                <a href="product1.html"><h4>PELICAN HAPPY TOYS. Магнитный конструктор светящийся.</h4></a>
+                                </div>
+                                <div class="price1">
+                                <p>1 950 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/kubiki0.png" alt="Соломон. Набор детских кубиков" class="play">
+                                <div class="playname">
+                                <a href="product2.html"><h4>СОЛОМОН. Набор детских кубиков</h4></a>
+                                
+                        </div>
+                        <div class="price1">
+                                <p>395 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/lodki0.png" alt="ФОРМА ИГРУШКИ Кораблик Юнга для ванной" class="play">
+                            <div class="playname">
+                             <a href="product3.html"><h4>ФОРМА ИГРУШКИ. Кораблик Юнга для ванной</h4></a>
+                            
+                        </div>
+                         <div class="price1">
+                                <p>452 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/mobil0.png" alt="HAPPY LAMA игрушки Мобиль в кроватку музыкальная карусель" class="play">
+                            <div class="playname">
+                           <a href="product4.html"><h4>HAPPY LAMA. Мобиль в кроватку музыкальная карусель</h4></a>
+                           
+                        </div>
+                        <div class="price1">
+                                <p>2 400 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/nabor0.png" alt="Bubble Joyce Игровой набор доктора детский врач" class="play">
+                            <div class="playname">
+                            <a href="product5.html"><h4>BUBBLE JOYCE. Игровой набор доктора детский врач</h4></a>
+                            
+                        </div>
+                        <div class="price1">
+                                <p>3 999 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/pesok0.png" alt="GENIO KIDS Кинетический Умный песок с песочницей" class="play">
+                            <div class="playname">
+                            <a href="product6.html"><h4>GENIO KIDS. Кинетический Умный песок с песочницей</h4></a>
+                            
+                        </div>
+                        <div class="price1">
+                                <p>1 100 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/pogremuschka0.png" alt="Azeva Погремушка прорезыватель зубов зайка для новорожденных" class="play">
+                            <div class="playname">
+                            <a href="product7.html"><h4>AZEVA. Погремушка прорезыватель зубов зайка для новорожденных</h4></a>
+                            
+                        </div>
+                        <div class="price1">
+                                <p>355 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/roxy0.png" alt="ROXY-KIDS Мини коврики для ванной на присосках" class="play">
+                            <div class="playname">
+                            <a href="product8.html"><h4>ROXY-KIDS. Мини коврики для ванной на присосках</h4></a>
+                            
+                        </div>
+                        <div class="price1">
+                                <p>475 &#8381;</p>
+                            </div> 
+                    </div>
+                    <div class="cat-item">
+                            <img src="images/catalog/samolet0.png" alt="Пластмастер Игрушечный самолет Ястреб" class="play">
+                            <div class="playname">
+                        <a href="product9.html"><h4>ПЛАСТМАСТЕР. Игрушечный самолет Ястреб</h4></a>
+                       
+                        </div>
+                         <div class="price1">
+                                <p>329 &#8381;</p>
+                            </div> 
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer container">
+                <nav class="footer2">
+                    <h4>О нас</h4>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Реквизиты</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                <nav class="footer2">
+                    <h4>Покупателям</h4>
+                    <ul>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Доставка товара</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                    </ul>                    
+                </nav>
+                <nav class="footer2">
+                    <h4>Мы в соцсетиях</h4>
+                    <ul>
+                        <li><a href="#"><img src="images/vk.svg" alt="vk" class="set"> ВКонтакте</a></li>
+                        <li><a href="#"><img src="images/instagram.svg" alt="instagram" class="set"> Instagram</a></li>
+                        <li><a href="#"><img src="images/facebook.svg" alt="facebook" class="set"> Facebook</a></li>
+                        <li><a href="#"><img src="images/telegram.svg" alt="telegram" class="set"> Телеграм</a></li>
+                    </ul>
+                </nav>
+                <div class="footer2">
+                <h4>Наши контакты</h4>
+                    <div>&#128222; +7(999) 999-99-99</div>
+                    <div>&#9201; пн-сб: с 10<sup>00</sup> до 18<sup>00</sup></div>
+                    <div>&#128235; Адрес шоу-рума: г. Москва, ул.Декабристов, 12</div> 
+                </div>
+            </div>
+            </div>
+            <div class="copy">Copyright &#169; GalElena 2022</div>
+        </footer>
+    </body>
+</html>
