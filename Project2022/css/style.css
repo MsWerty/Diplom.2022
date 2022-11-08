@@ -97,7 +97,9 @@ input, textarea {
     box-sizing: border-box;
 }
 html, body {
-    height: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
 }
 
 /* common */
@@ -130,6 +132,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 320px;
+    position: relative;
 }
 header {
     flex: none;
@@ -154,12 +157,6 @@ main {
     background-size: cover;
 }
 
-footer {
-    flex: none;
-    background: rgb(108,117,125);
-    color: #fff;
-}
-
 /* modals */
 .screener {
     background: rgba(0,0,0,.5);
@@ -169,7 +166,12 @@ footer {
     left: 0;
     right: 0;
     cursor: pointer;
-    z-index: 1;
+    z-index: 10;
+}
+#buymodal {
+    height: 30px;
+    text-align: center;
+    color: purple;
 }
 .modal {
     background: white;
@@ -179,7 +181,7 @@ footer {
     width: 400px;
     top: 100px;
     padding: 40px;
-    z-index: 1;
+    z-index: 10;
     display: block;
 }
 .close {
@@ -475,7 +477,7 @@ footer {
 /*footer*/
 footer {
     height: 220px;
-    color: #f5f5f5;
+    color: white;
     background: #800080;
     flex: 0 0 auto;
     position: relative;
@@ -489,10 +491,10 @@ footer {
     float: right;
 }
 footer a {
-    color: #c4c4c4;
+    color: white;
 }
 footer a:hover {
-    color: #f5f5f5;
+    color: #E6E6FA;
 }
 .footer {
     display: flex;
@@ -669,7 +671,7 @@ footer a:hover {
     padding: 9px;
 }
 .gallery {
-    width: 390px;
+    width: 290px;
     height: 50px;
     margin-top: 20px;
     padding: 0 30px;
@@ -705,7 +707,7 @@ footer a:hover {
     margin-top: -9px;
 }
 .gallery > div {
-    width: 390px;
+    width: 290px;
     height: 50px;
     overflow: hidden;
     position: relative;
@@ -812,6 +814,7 @@ u   {
 }
 .empty .container.empty {
     display: block;
+  
 }
 
 /* calendar */
@@ -823,7 +826,19 @@ u   {
     grid-template-columns: repeat(7, auto);
 }
 .dp_header {
-    cursor: pointer;
+    cursor: pointer; 
+}
+.bigprev {
+    margin: 0 5px;   
+}
+.bignext {
+    margin: 0 5px;
+}
+.prev {
+    margin: 15px;   
+}
+.next {
+    margin: 15px;   
 }
 form {
     width: 400px;

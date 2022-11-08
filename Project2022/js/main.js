@@ -277,12 +277,15 @@ $(function(){
     }
     
     $('.btn-buy').click(function(){
-    alert('Товар добавлен в корзину');
+        getModalWindow('buymodal');
+         $('.modal').append('<p>Товар добавлен в корзину.</p>');
+         $( '.modal' ).fadeOut( 1500 );
+
         let res = {}
         let aim = $(this).parents('.product');
         res.id = aim.data('product-id');
         res.name = aim.find('h1').html();
-        res.price = aim.find('.price span').html();
+        res.price = aim.find('.price span').html() .replace(/\D/g, '');
         res.quantity = 1
         res.link = location.href;
         let basket = JSON.parse(localStorage.getItem('basket'));
