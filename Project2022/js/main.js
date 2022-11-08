@@ -2,8 +2,8 @@
 let citylist = ['Астрахань', 'Барнаул', 'Владивосток', 'Волгоград', 'Владивосток', 'Екатеринбург', 'Иркутск', 'Калининград', 'Красноярск', 'Москва', 'Новосибирск', 'Омск', 'Пермь', 'Рязань', 'Самара', 'Калининград', 'Хабаровск', 'Ярославль', 'Якутск'];
 let rangemin = 0;
 let rangemax = 5000;
-let startbasket = [
-    {
+let startbasket = []
+    /*{
         id: 12345,
         name: 'ALFA Multi Brand Машина на пульте управления Дрифт.',
         price: 2100,
@@ -73,7 +73,7 @@ let startbasket = [
         quantity: 1,
         link: ''
     }
-];
+];*/
 
 /* functions */
 function getModalWindow(idname) {
@@ -313,7 +313,7 @@ $(function(){
         if (!basket) basket = [];
         basket.push(...startbasket);
         for (let item of basket) {
-            let hlpstr = '<tr data-id="'+item.id+'"><th scope="row" class="index">'+count+'</th><td class="name"><a href="'+item.link+'">'+item.name+'</a></td><td class="qty"><span class="minus">&minus;</span><strong>'+item.quantity+'</strong><span class="plus">&plus;</span></td><td class="price">'+item.price+'</td><td class="sum"></td><td class="delete icon">&#xe906;</td></tr>';
+            let hlpstr = '<tr data-id="'+item.id+'"><th scope="row" class="index">'+count+'</th><td class="name"><a href="'+item.link+'">'+item.name+'</a></td><td class="qty"><span class="minus">&minus;</span><strong>'+item.quantity+'</strong><span class="plus">&plus;</span></td><td class="price">'+item.price+'</td><td class="sum">'+item.sum+'</td><td class="delete icon">&#xe906;</td></tr>';
             point.append(hlpstr);
             count++;
         }
