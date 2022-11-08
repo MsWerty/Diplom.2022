@@ -288,7 +288,6 @@ main {
     display: flex;
     margin-top: 30px;
     background: linear-gradient(to bottom, rgba(253,229,255,1) 0%,rgba(250,215,253,1) 100%);
-    /*flex-grow: 1;*/
 }
 .poisk {
     border-radius: 10px;
@@ -331,8 +330,8 @@ main {
     line-height: 60px;
 }
 .actiontimer span {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 50px;
     vertical-align: top;
     border: red 2px outset;
     border-radius: 8px;
@@ -925,6 +924,24 @@ form {
 @media (max-width: 1400px) {
     .container {
         width: auto;
-        /*margin: 0 40px;*/
     }
+}
+
+@media (max-width: 1000px) {
+    .containernew{
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+@media (max-width: 925px) {
+    .container1{
+        width: 100%;
+        align-content: space-between;
+        justify-content: center;
+    }
+    #citi {
+        font-weight: 300; 
+    }
+   
 }
